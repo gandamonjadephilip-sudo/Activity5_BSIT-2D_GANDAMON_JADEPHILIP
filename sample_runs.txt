@@ -1,0 +1,24 @@
+SAMPLE RUN 1: ARRAY STACK UNDERFLOW
+Choose option 1, enter capacity 2, then choose Pop.
+ERROR: Stack underflow: cannot pop from an empty stack.
+Current state: Stack: []
+
+SAMPLE RUN 2: ARRAY STACK OVERFLOW
+Choose option 1, enter capacity 2, then push A, push B, and push C.
+ERROR: Stack overflow: the stack is full.
+Current state: Stack (bottom to top): ['A', 'B']
+
+SAMPLE RUN 3: CIRCULAR ARRAY QUEUE UNDERFLOW
+Choose option 3, enter capacity 2, then choose Dequeue.
+ERROR: Queue underflow: cannot dequeue from an empty queue.
+Current state: Queue (front to rear): []
+
+SAMPLE RUN 4: CIRCULAR ARRAY QUEUE OVERFLOW
+Choose option 3, enter capacity 2, then enqueue A, enqueue B, and enqueue C.
+ERROR: Queue overflow: the queue is full.
+Current state: Queue (front to rear): ['A', 'B']
+
+SAMPLE RUN 5: CIRCULAR QUEUE WRAP-AROUND
+Choose option 3 and capacity 3.
+Enqueue A, enqueue B, enqueue C. Dequeue once (removes A).
+Enqueue D. The logical queue is now B, C, D, even though D is stored at the start of the physical array.
